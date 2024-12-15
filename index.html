@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flower.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1534710961216-75c88202f43e?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    transition: all ease 2s;
+}
+#left:hover{
+    background-image: url(https://images.unsplash.com/photo-1563714193017-5a5fb60bc02b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    cursor: pointer;
+}
+#overlayl{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.338);
+    position: relative;
+}
+#text-left{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#box h1,
+p{
+    margin-bottom: 10px;
+    color: rgb(198, 198, 198);
+}
+#box p{
+    font-size: 18px;
+    font-family: arial;
+    gap: 10px;
+}
+#box h1{
+    font-size: 40px;
+    font-family: arial;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.684);
+}
+#right{
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+    background-image: url(https://images.unsplash.com/photo-1470755008296-2939845775eb?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+}
+#right:hover{
+    background-image: url(https://images.unsplash.com/photo-1568576599114-b9aa87edd0e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+#overlayr{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.356);
+    position: relative;
+}
+#text-right{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#box button{
+    padding: 12px 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all ease 1s;
+}
+#box button:hover{
+    background-color: rgba(255, 255, 255, 0.284);
+    color: black;
+    font-weight: 800px;
+    font-size: 18px;
+    border: 2px solid white;
+}
+
+
+</style>
+<body>
+    <div id="box"> 
+        <div id="left">
+            <div id="overlayl">
+                <div id="text-left">
+                    <h1>Garden</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ratione sapiente perferendis rem iste suscipit optio, mollitia, fugit accusantium et aperiam sit, dignissimos quisquam? Illum magni cumque, illo vel dolor adipisci facilis?</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="overlayr">
+                <div id="text-right">
+                    <h1>Garden</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ratione sapiente perferendis rem iste suscipit optio, mollitia, fugit accusantium et aperiam sit, dignissimos quisquam? Illum magni cumque, illo vel dolor adipisci facilis?</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
